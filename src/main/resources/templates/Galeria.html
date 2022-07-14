@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+    <head>
+  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilosIndex.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilosGaleria.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+            <a th:href="@{/}" class="logo nav-link" >Glamour</a>  
+
+            <div id="logoFace" class="redesSociales"><img src="ImgIndex/facebook.png" alt=""/></div>
+            <div id="logoInsta" class="redesSociales"><img src="ImgIndex/instagram.png" alt=""/></div>
+            <div id="logoWhatsapp" class="redesSociales"><img src="ImgIndex/whatsapp(2)_1.png" alt=""/></div>
+
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <!-- comment  <a th:href="@{/modificarCliente/} + ${item.idCliente}">Modificar</a>-->
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Servicios}">SERVICIOS</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Novedades}">NOVEDADES</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Promociones}">PROMOCIONES</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Galeria}">GALERÍA</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Nosotros}">NOSOTROS</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Contacto}">CONTACTO</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Registrarse}">REGISTRARSE</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="Galeria">
+            <h2>Artículos en Descuento</h2>
+            <br>
+            <ul>
+                <li><img src="imgPromociones/HTB1k1PKSpXXXXczXpXXq6xXFXXXe.jpg" alt="" width="300" height="300"/></li>
+                <li><img src="imgPromociones/81Kac52SJwL._SY355_.jpg" alt="" width="300" height="300"/></li>
+                <li><img src="imgPromociones/5dfdbc54aca3a5003602a720-large.jpg" alt="" width="300" height="300"/></li>
+                
+            </ul>
+            <br>
+            <br>
+            <h2>Artículos Nuevos</h2>
+            <br>
+            <ul>
+                <li><img src="imgPromociones/COLORTECH_PERMANENTE.jpg" alt="" width="300" height="300" /></li>
+                <li><img src="imgPromociones/Iluminador-de-mechas-color-tech-1.jpg" alt="" width="300" height="300"/></li>
+                <li><img src="imgPromociones/tinte-fantasia-color-tech-90-g-magenta-semi-permanente.jpg" alt="" width="300" height="300"/></li>
+            </ul>
+        </section>
+        
+    </body>
+</html>

@@ -1,0 +1,29 @@
+#Promociones {
+    margin: 150px 10px;
+    width: 1350px;
+    height: 300px;
+}
+
+#Promociones ul{
+    width: 1300px;
+    height: 300px;
+}
+#Promociones ul li{
+    display: flex;
+    float: left;
+    width: 400px;
+    height: 300px;
+    list-style: none;
+    margin-right: 20px;  
+}
+
+#Promociones h2{
+    font-size: 30px;
+    text-align: center;
+    left: 550px;
+}
+
+#Promociones img{
+    -webkit-border-radius:10%;
+    -webkit-box-shadow: 0px 0px 10px 10px #ff99ff;
+}
