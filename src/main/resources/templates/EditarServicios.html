@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <h2>Editar Servicio</h2>
+        <a th:href="@{/Servicios}">Regresar</a>
+        <br>
+        <br>
+        <form th:action="@{/guardarServicio}" method="post" th:object="${servicio}">
+            <input type="hidden" name="IdServicio" th:field="*{idServicio}"
+                   <label for="nombre">Servicio: </label>
+            <input type="text" id="nombreServicio" name="nombre" th:field="*{nombreServicio}" />
+            <br></br>
+            <label for="nombre">Precio: </label>
+            <input type="text" id="precio" name="precio" th:field="*{precio}" />
+            <br></br>
+
+            <input type="submit" name="Guardar" value="Guardar" />
+            <br>
+            </body>
+            </html>

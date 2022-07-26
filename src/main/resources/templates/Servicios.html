@@ -44,16 +44,40 @@
         </div>
 
         <section class="tablasCabello">
-            <ul id="tablaCabello">
-                <li>Blower</li>
-                <li>Corte</li>
-                <li>Corte y Blower</li>
-                <li>Corte de niña menos de 7 años</li>
-                <li>Recogido</li>
-                <li>Peinado elaborado</li>
-                <li>Peinado de novia</li>
-                <li>Peinado con ondulaciones o rizos</li>
-            </ul>
+           
+            <a th:href="@{/nuevoServicio}">Nuevo Servicio</a><!-- comment --> 
+            
+            <br>
+        <br>
+        <div th:if="${servicios != null && !servicios.empty}">
+            <table border="1">
+                <thead id="encabezadoTabla">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Modificar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="item: ${servicios}">
+                        <td th:text="${item.nombre}"></td>
+                        <td th:text="${item.precio}"></td>
+                        <td><a th:href="@{/modificarServicio/} + ${item.idServicio}">Modificar</a></td>
+                        <td><a th:href="@{/eliminarServicio/} + ${item.idServicio}">Eliminar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div th:if="${servicios == null ||  servicios.empty}">
+            La lista de servicios está vacia
+
+        </div>
+            
+            
+            
             <ul class="tablaCabello2">
                 <li>Extensiones de graduación</li>
                 <li>Extensiones colores</li>
