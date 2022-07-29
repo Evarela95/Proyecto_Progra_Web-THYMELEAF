@@ -1,4 +1,4 @@
-package com.Glamour.domain;
+package com.ProyectoGlamourThymeleaf.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -7,7 +7,6 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "servicios")
-
 public class Servicio implements Serializable {
 
     private static final long serialVersionUID = 1L;

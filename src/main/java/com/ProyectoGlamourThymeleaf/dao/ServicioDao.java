@@ -1,7 +1,7 @@
 
-package com.Glamour.dao;
+package com.ProyectoGlamourThymeleaf.dao;
 
-import com.Glamour.domain.Servicio;
+import com.ProyectoGlamourThymeleaf.domain.Servicio;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ServicioDao extends CrudRepository<Servicio, Long>{

@@ -49,10 +49,4 @@ public class InicioController {
 
         return "Registrarse";
     }
-
-    @GetMapping("/Servicios")
-    public String mostrarServicios() {
-
-        return "Servicios";
-    }
 }

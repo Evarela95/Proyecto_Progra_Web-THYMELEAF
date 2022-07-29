@@ -1,8 +1,8 @@
 
-package com.Glamour.service;
+package com.ProyectoGlamourThymeleaf.service;
 
-import com.Glamour.dao.ServicioDao;
-import com.Glamour.domain.Servicio;
+import com.ProyectoGlamourThymeleaf.dao.ServicioDao;
+import com.ProyectoGlamourThymeleaf.domain.Servicio;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

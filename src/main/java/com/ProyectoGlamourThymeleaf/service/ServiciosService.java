@@ -1,6 +1,6 @@
-package com.Glamour.service;
+package com.ProyectoGlamourThymeleaf.service;
 
-import com.Glamour.domain.Servicio;
+import com.ProyectoGlamourThymeleaf.domain.Servicio;
 import java.util.List;
 
 public interface ServiciosService {
