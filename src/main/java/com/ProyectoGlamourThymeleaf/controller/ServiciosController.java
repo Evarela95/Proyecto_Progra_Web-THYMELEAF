@@ -26,7 +26,8 @@ public class ServiciosController {
 
     @GetMapping("/servicioNuevo")
     public String nuevoServicio(Servicio servicio) {
-        return "/Servicios";
+        
+        return "/EditarServicios";
     }
 
     @PostMapping("/servicioGuardar")
@@ -43,7 +44,7 @@ public class ServiciosController {
     }
 
     @GetMapping("/servicioEliminar/{idServicio}")
-    public String eliminarServicio(Servicio servicio) {
+    public String EliminarServicio(Servicio servicio) {
         serviciosService.delete(servicio);
         return "redirect:/Servicios";
     }

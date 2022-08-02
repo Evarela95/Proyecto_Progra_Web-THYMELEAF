@@ -12,7 +12,7 @@
         <a th:href="@{/Servicios}">Regresar</a>
         <br>
         <br>
-        <form th:action="@{/guardarServicio}" method="post" th:object="${servicio}">
+        <form th:action="@{/servicioGuardar}" method="post" th:object="${servicio}">
             <input type="hidden" name="IdServicio" th:field="*{idServicio}"
                    <label for="nombre">Servicio: </label>
             <input type="text" id="nombreServicio" name="nombre" th:field="*{nombreServicio}" />
