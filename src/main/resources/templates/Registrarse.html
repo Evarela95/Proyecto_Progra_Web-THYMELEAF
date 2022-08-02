@@ -9,26 +9,9 @@
         <link href="css/estilosRegistrarse.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-         <header class="header">
-            <a th:href="@{/}" class="logo nav-link" >Glamour</a>  
-
-            <div id="logoFace" class="redesSociales"><img src="ImgIndex/facebook.png" alt=""/></div>
-            <div id="logoInsta" class="redesSociales"><img src="ImgIndex/instagram.png" alt=""/></div>
-            <div id="logoWhatsapp" class="redesSociales"><img src="ImgIndex/whatsapp(2)_1.png" alt=""/></div>
-
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <!-- comment  <a th:href="@{/modificarCliente/} + ${item.idCliente}">Modificar</a>-->
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Servicios}">SERVICIOS</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Novedades}">NOVEDADES</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Promociones}">PROMOCIONES</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Galeria}">GALERÍA</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Nosotros}">NOSOTROS</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Contacto}">CONTACTO</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Registrarse}">REGISTRARSE</a></li>
-                </ul>
-            </nav>
-        </header>
+         
+        <header th:replace="layout/plantilla :: header" />
+        <nav th:replace="layout/plantilla :: nav" />
 
         <section id="contenido">
             <ul>

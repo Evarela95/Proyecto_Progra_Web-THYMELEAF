@@ -8,34 +8,17 @@
         <link href="css/estilosNosotros.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header class="header">
-            <a th:href="@{/}" class="logo nav-link" >Glamour</a>  
-
-            <div id="logoFace" class="redesSociales"><img src="ImgIndex/facebook.png" alt=""/></div>
-            <div id="logoInsta" class="redesSociales"><img src="ImgIndex/instagram.png" alt=""/></div>
-            <div id="logoWhatsapp" class="redesSociales"><img src="ImgIndex/whatsapp(2)_1.png" alt=""/></div>
-
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <!-- comment  <a th:href="@{/modificarCliente/} + ${item.idCliente}">Modificar</a>-->
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Servicios}">SERVICIOS</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Novedades}">NOVEDADES</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Promociones}">PROMOCIONES</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Galeria}">GALERÍA</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Nosotros}">NOSOTROS</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Contacto}">CONTACTO</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" th:href="@{/Registrarse}">REGISTRARSE</a></li>
-                </ul>
-            </nav>
-        </header>
+        
+        <header th:replace="layout/plantilla :: header" />
+        <nav th:replace="layout/plantilla :: nav" />
 
         <aside id="barraLateral">
-            <br><!-- comment -->
+            <br>
 
 
 
             <h2 id="Nuestros trabajos" style="text-align: center">Nuestros trabajos</h2>
-            <br><!-- comment -->
+            <br>
             <br>
             <iframe width="500" height="300" src="https://www.youtube.com/embed/AjYaO51Ad7Q" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
@@ -43,7 +26,7 @@
         </aside>
 
         <aside id="barraLateral1">
-            <br><!-- comment -->
+            <br>
 
             <h2 style="text-align: center">Acerca de nosotros</h2>
             <br>
